@@ -29,17 +29,17 @@ CHAT_ID=Config.CHAT_ID
 playlist=Config.playlist
 LOG_GROUP=Config.LOG_GROUP
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @AsmSafone 😉!"
+HOME_TEXT = "👋🏻 **Hi Bsdk Sir And Mem[{}](tg://user?id={})**,\n\nI'm **BC Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @Mr_talibaan 😉!"
 HELP_TEXT = """
 💡 --**Setting Up**--:
 
-\u2022 Add the bot and user account in your group with admin rights.
+\u2022 Add the Bsdk bot and user account in your group with admin rights.
 \u2022 Start a voice chat in your group & restart the bot if not joined to vc.
 \u2022 Use /play [song name] or use /play as a reply to an audio file or youtube link.
 
 💡 --**Common Commands**--:
 
-\u2022 `/help` - shows help for all commands
+\u2022 `/help` - shows help for all BC commands
 \u2022 `/song` [song name] - download the song as audio
 \u2022 `/current` - shows current track with controls
 \u2022 `/playlist` - shows the current & queued playlist
@@ -63,7 +63,7 @@ HELP_TEXT = """
 \u2022 `/setvar` - set/change heroku configs
 
 © **Powered By** : 
-**@AsmSafone | @AsmSupport** 👑
+**@Mr_TALIBAAN | @ITS_TALIBANBOT** 👑
 """
 
 
@@ -71,7 +71,7 @@ HELP_TEXT = """
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.from_user.id not in Config.ADMINS and query.data != "help":
         await query.answer(
-            "You're Not Allowed! 🤣",
+            "You're Not Allowed BSDK! 🤣",
             show_alert=True
             )
         return
@@ -197,12 +197,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Upsc_cse_pdf"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/hindi_love_status_hd"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/hindi_love_status_hd"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/its_talibanbot"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -224,12 +224,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/hindi_love_status_hd"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/hindi_love_status_hd"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/its_talibanbot"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/its_talibanbot"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -286,12 +286,12 @@ async def help(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/hindi_love_status_hd"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/hindi_love_status_hd"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/hindi_love_status_hd"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/its_talibanbot"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
