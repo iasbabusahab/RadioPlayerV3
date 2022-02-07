@@ -240,7 +240,7 @@ async def yplay(_, message: Message):
             pl = f"{emoji.NO_ENTRY} **Empty Playlist!**"
         else:
             pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-                f"**{i}**. **{x[1]}**\n  - **Requested By:** {x[4]}"
+                f"**{i}**. **{x[1]}**\n  - **Requested By Bhidu:** {x[4]}"
                 for i, x in enumerate(playlist)
                 ])
         if EDIT_TITLE:
@@ -266,7 +266,7 @@ async def current(_, m: Message):
         return
     else:
         pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-            f"**{i}**. **{x[1]}**\n  - **Requested By:** {x[4]}"
+            f"**{i}**. **{x[1]}**\n  - **Requested By Bhidu:** {x[4]}"
             for i, x in enumerate(playlist)
             ])
     if m.chat.type == "private":
@@ -570,8 +570,8 @@ async def not_chat(_, m: Message):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://t.me/b player_bot"),
             ]
          ]
-    k=await m.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/AsmSafone/RadioPlayerV3) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply_photo(photo="https://telegra.ph/file/343a61cd3e5312f1b8ac5.jpg", caption="**Sorry, You Can't Use This Bot In This Group BSDK! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://t.me/mr_talibaan) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)
