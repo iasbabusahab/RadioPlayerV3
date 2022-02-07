@@ -31,11 +31,11 @@ buttons = [
                 InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Hindi_love_status_hd"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/upsc_cse_pdf"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("🤖 MAKE YOUR OWN BC 🤖", url="https://t.me/Mr_Talibaan"),
             ]
          ]
 
@@ -46,10 +46,10 @@ async def search(client, query):
     if query.query == "SAF_ONE":
         answers.append(
             InlineQueryResultPhoto(
-                title="Deploy Your Own Radio Player",
-                thumb_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                photo_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @AsmSupport 👑</b>",
+                title="Deploy Your Own BSDKPlayer",
+                thumb_url="https://telegra.ph/file/343a61cd3e5312f1b8ac5.jpg",
+                photo_url="https://telegra.ph/file/343a61cd3e5312f1b8ac5.jpg",
+                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@Mr_Talibaan | @its_talibanbot 👑</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
@@ -60,7 +60,7 @@ async def search(client, query):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text=("✍️ Type An Video Name !"),
+            switch_pm_text=("✍️ Type An Bc Video Name !"),
             switch_pm_parameter="help",
             cache_time=0
         )
